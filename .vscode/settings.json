@@ -1,0 +1,10 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "npx tsc": true,
+        "./node_modules/.bin/tsc": true,
+        "/^pkill -f \"vite\" 2>/dev/null; sleep 1; cd /Users/jihan/Personal/GitHub/MedStore/medstore-app && npm run dev &$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
