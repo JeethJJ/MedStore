@@ -6,7 +6,7 @@ import { faTh, faList, faSearch, faTimes, faSlidersH, faChevronDown, faChevronUp
 import { products, categories } from '../data/products';
 import ProductCard from '../components/ProductCard';
 
-type SortOption = 'default' | 'price-asc' | 'price-desc' | 'name-asc' | 'rating';
+type SortOption = 'default' | 'price-asc' | 'price-desc' | 'name-asc';
 
 const Products: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -43,7 +43,7 @@ const Products: React.FC = () => {
       case 'price-asc': list.sort((a, b) => a.price - b.price); break;
       case 'price-desc': list.sort((a, b) => b.price - a.price); break;
       case 'name-asc': list.sort((a, b) => a.name.localeCompare(b.name)); break;
-      case 'rating': list.sort((a, b) => b.rating - a.rating); break;
+
     }
     return list;
   }, [activeCategory, search, sort]);
@@ -117,7 +117,6 @@ const Products: React.FC = () => {
                     <option value="price-asc">Price: Low → High</option>
                     <option value="price-desc">Price: High → Low</option>
                     <option value="name-asc">Name: A–Z</option>
-                    <option value="rating">Top Rated</option>
                   </Form.Select>
                   <div style={{ display: 'flex', gap: 4, border: '1.5px solid var(--border)', borderRadius: 10, padding: 3, background: 'var(--background)', flexShrink: 0 }}>
                     <button onClick={() => setView('grid')} style={{ padding: '6px 12px', borderRadius: 7, border: 'none', cursor: 'pointer', background: view === 'grid' ? 'var(--primary)' : 'transparent', color: view === 'grid' ? 'white' : 'var(--text-muted)' }} title="Grid"><FontAwesomeIcon icon={faTh} /></button>
@@ -189,7 +188,6 @@ const Products: React.FC = () => {
               <option value="price-asc">Price: Low to High</option>
               <option value="price-desc">Price: High to Low</option>
               <option value="name-asc">Name: A–Z</option>
-              <option value="rating">Top Rated</option>
             </Form.Select>
           </div>
 

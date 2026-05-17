@@ -23,9 +23,6 @@ export interface Product {
   variants: ProductVariant[];
   offers: Offer[];
   inStock: boolean;
-  stockCount: number;
-  rating: number;
-  reviewCount: number;
 }
 
 export interface CartItem {

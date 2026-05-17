@@ -3,7 +3,7 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faShoppingCart, faArrowLeft, faStar, faTag,
+  faShoppingCart, faArrowLeft, faTag,
   faCheckCircle, faTimesCircle, faChevronLeft, faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
 import { products } from '../data/products';
@@ -134,17 +134,6 @@ const ProductDetail: React.FC = () => {
               {product.name}
             </h1>
 
-            {/* Rating */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
-              <span className="stars">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <FontAwesomeIcon key={i} icon={faStar} style={{ opacity: i < Math.round(product.rating) ? 1 : 0.2, fontSize: 14 }} />
-                ))}
-              </span>
-              <span style={{ fontWeight: 700, color: 'var(--text-main)' }}>{product.rating}</span>
-              <span style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>({product.reviewCount} reviews)</span>
-            </div>
-
             {/* Price */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 20, flexWrap: 'wrap' }}>
               <span style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--primary)' }}>
@@ -168,7 +157,7 @@ const ProductDetail: React.FC = () => {
               {product.inStock ? (
                 <span className="stock-badge-in">
                   <FontAwesomeIcon icon={faCheckCircle} style={{ marginRight: 4 }} />
-                  In Stock ({product.stockCount} available)
+                  In Stock
                 </span>
               ) : (
                 <span className="stock-badge-out">

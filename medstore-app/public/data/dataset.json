@@ -16,10 +16,11 @@
                 "Turquoise"
             ],
             "images": [
-                "/images/littmann-stethoscope-cases.jpeg"
+                "/images/littmann-stethoscope-cases.jpeg",
+                "/images/littmann-stethoscope-cases-2.jpeg"
             ],
             "offerPercentage": 0,
-            "inStock": false
+            "inStock": true
         },
         {
             "id": 2,
@@ -32,10 +33,11 @@
                 "Black"
             ],
             "images": [
-                "/images/adult-knee-hammer.jpeg"
+                "/images/adult-knee-hammer.jpeg",
+                "/images/adult-knee-hammer-2.jpeg"
             ],
             "offerPercentage": 0,
-            "inStock": false
+            "inStock": true
         },
         {
             "id": 3,
@@ -51,7 +53,7 @@
                 "/images/paediatric-knee-hammer.jpeg"
             ],
             "offerPercentage": 0,
-            "inStock": false
+            "inStock": true
         },
         {
             "id": 4,
@@ -64,10 +66,13 @@
                 "Black"
             ],
             "images": [
-                "/images/littmann-spare-parts-kit.jpeg"
+                "/images/littmann-spare-parts-kit.jpeg",
+                "/images/littmann-spare-parts-kit-2.jpeg",
+                "/images/littmann-spare-parts-kit-3.jpeg",
+                "/images/littmann-spare-parts-kit-4.jpeg"
             ],
             "offerPercentage": 0,
-            "inStock": false
+            "inStock": true
         },
         {
             "id": 5,
@@ -83,7 +88,7 @@
                 "/images/cardiology-stethoscope-case.jpeg"
             ],
             "offerPercentage": 0,
-            "inStock": false
+            "inStock": true
         },
         {
             "id": 6,
@@ -96,10 +101,11 @@
                 "Customised Bag"
             ],
             "images": [
-                "/images/paediatric-kit.jpeg"
+                "/images/paediatric-kit.jpeg",
+                "/images/paediatric-kit-2.jpeg"
             ],
             "offerPercentage": 0,
-            "inStock": false
+            "inStock": true
         },
         {
             "id": 7,
@@ -112,10 +118,11 @@
                 "Customised Bag"
             ],
             "images": [
-                "/images/sensory-kit.jpeg"
+                "/images/sensory-kit.jpeg",
+                "/images/sensory-kit-2.jpeg"
             ],
             "offerPercentage": 0,
-            "inStock": false
+            "inStock": true
         },
         {
             "id": 8,
@@ -129,10 +136,11 @@
                 "Gray"
             ],
             "images": [
-                "/images/littmann-quality-a-kit.jpeg"
+                "/images/littmann-quality-a-kit.jpeg",
+                "/images/littmann-quality-a-kit-2.jpeg"
             ],
             "offerPercentage": 0,
-            "inStock": false
+            "inStock": true
         },
         {
             "id": 9,
@@ -146,10 +154,13 @@
                 "Gray"
             ],
             "images": [
-                "/images/littmann-quality-a-adult-diaphragm.jpeg"
+                "/images/littmann-quality-a-adult-diaphragm.jpeg",
+                "/images/littmann-quality-a-adult-diaphragm-2.jpeg",
+                "/images/littmann-quality-a-adult-diaphragm-3.jpeg",
+                "/images/littmann-quality-a-adult-diaphragm-4.jpeg"
             ],
             "offerPercentage": 0,
-            "inStock": false
+            "inStock": true
         },
         {
             "id": 10,
@@ -163,10 +174,11 @@
                 "Gray"
             ],
             "images": [
-                "/images/littmann-quality-a-ear-tips.jpeg"
+                "/images/littmann-quality-a-ear-tips.jpeg",
+                "/images/littmann-quality-a-ear-tips-2.jpeg"
             ],
             "offerPercentage": 0,
-            "inStock": false
+            "inStock": true
         },
         {
             "id": 11,
@@ -180,10 +192,11 @@
                 "Gray"
             ],
             "images": [
-                "/images/littmann-quality-a-paediatric-diaphragm.jpeg"
+                "/images/littmann-quality-a-paediatric-diaphragm.jpeg",
+                "/images/littmann-quality-a-paediatric-diaphragm-2.jpeg"
             ],
             "offerPercentage": 0,
-            "inStock": false
+            "inStock": true
         },
         {
             "id": 12,
@@ -197,10 +210,11 @@
                 "Gray"
             ],
             "images": [
-                "/images/littmann-quality-a-chill-bell-sleeve.jpeg"
+                "/images/littmann-quality-a-chill-bell-sleeve.jpeg",
+                "/images/littmann-quality-a-chill-bell-sleeve-2.jpeg"
             ],
             "offerPercentage": 0,
-            "inStock": false
+            "inStock": true
         },
         {
             "id": 13,
@@ -214,10 +228,13 @@
                 "Silver"
             ],
             "images": [
-                "/images/led-medical-torch.jpeg"
+                "/images/led-medical-torch.jpeg",
+                "/images/led-medical-torch-2.jpeg",
+                "/images/led-medical-torch-3.jpeg",
+                "/images/led-medical-torch-4.jpeg"
             ],
             "offerPercentage": 0,
-            "inStock": false
+            "inStock": true
         }
     ]
 }

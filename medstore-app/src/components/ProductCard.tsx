@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import type { Product } from '../types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar, faShoppingCart, faTag } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faTag } from '@fortawesome/free-solid-svg-icons';
 import { useCart } from '../context/CartContext';
 
 interface Props {
@@ -64,14 +64,6 @@ const ProductCard: React.FC<Props> = ({ product, view = 'grid' }) => {
               {product.inStock ? 'In Stock' : 'Out of Stock'}
             </span>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginTop: 8 }}>
-            <span className="stars">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <FontAwesomeIcon key={i} icon={faStar} style={{ opacity: i < Math.round(product.rating) ? 1 : 0.25, fontSize: 12 }} />
-              ))}
-            </span>
-            <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>({product.reviewCount})</span>
-          </div>
         </div>
         <button
           className="btn-primary-custom"
@@ -105,14 +97,6 @@ const ProductCard: React.FC<Props> = ({ product, view = 'grid' }) => {
         )}
         <h5 className="product-card-title">{product.name}</h5>
         <p className="product-card-desc">{product.description}</p>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 12 }}>
-          <span className="stars">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <FontAwesomeIcon key={i} icon={faStar} style={{ opacity: i < Math.round(product.rating) ? 1 : 0.25, fontSize: 12 }} />
-            ))}
-          </span>
-          <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>({product.reviewCount})</span>
-        </div>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8 }}>
           <div>
             <span className="product-card-price">LKR {product.price.toLocaleString()}</span>
