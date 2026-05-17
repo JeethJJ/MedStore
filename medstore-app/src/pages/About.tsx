@@ -55,23 +55,6 @@ const About: React.FC = () => (
         </Col>
       </Row>
 
-      {/* Stats */}
-      <Row className="g-3 mb-5">
-        {[
-          { value: '500+', label: 'Products Available' },
-          { value: '10,000+', label: 'Happy Customers' },
-          { value: '5+', label: 'Years of Service' },
-          { value: '25+', label: 'Brands Stocked' },
-        ].map(stat => (
-          <Col xs={6} md={3} key={stat.label}>
-            <div style={{ background: 'white', borderRadius: 16, padding: '28px 16px', textAlign: 'center', border: '1px solid var(--border)' }}>
-              <div style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--primary)', marginBottom: 4 }}>{stat.value}</div>
-              <div style={{ color: 'var(--text-muted)', fontSize: '0.875rem', fontWeight: 500 }}>{stat.label}</div>
-            </div>
-          </Col>
-        ))}
-      </Row>
-
       {/* Our Values */}
       <div style={{ marginBottom: 56 }}>
         <div style={{ textAlign: 'center', marginBottom: 40 }}>
