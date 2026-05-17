@@ -89,25 +89,6 @@ const Home: React.FC = () => {
         </Container>
       </section>
 
-      {/* Stats */}
-      <section style={{ background: 'white', padding: '32px 0', borderBottom: '1px solid var(--border)' }}>
-        <Container>
-          <Row className="text-center g-3">
-            {[
-              { value: '500+', label: 'Products' },
-              { value: '10,000+', label: 'Happy Customers' },
-              { value: '5+', label: 'Years Experience' },
-              { value: '24/7', label: 'Customer Support' },
-            ].map(stat => (
-              <Col xs={6} md={3} key={stat.label}>
-                <div style={{ fontWeight: 800, fontSize: '1.8rem', color: 'var(--primary)' }}>{stat.value}</div>
-                <div style={{ color: 'var(--text-muted)', fontSize: '0.875rem', fontWeight: 500 }}>{stat.label}</div>
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </section>
-
       {/* Features */}
       <section style={{ padding: '64px 0' }}>
         <Container>
