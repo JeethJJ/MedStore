@@ -1,0 +1,136 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Littmann Stethoscope Cases",
+            "category": "Medical Accessories",
+            "price": 2990,
+            "currency": "LKR",
+            "description": "Protective hard case designed for Littmann stethoscopes with durable zip closure and compact portable design.",
+            "variants": ["Black", "Pink", "Gray", "Purple", "Blue", "Turquoise"],
+            "images": ["/images/littmann-stethoscope-cases.jpeg"],
+            "offerPercentage": 0
+        },
+        {
+            "id": 2,
+            "name": "Adult Knee Hammer",
+            "category": "Diagnostic Instruments",
+            "price": 1690,
+            "currency": "LKR",
+            "description": "Reflex percussion hammer used for neurological examination and assessment of deep tendon reflexes in adults.",
+            "variants": ["Black"],
+            "images": ["/images/adult-knee-hammer.jpeg"],
+            "offerPercentage": 0
+        },
+        {
+            "id": 3,
+            "name": "Paediatric Knee Hammer",
+            "category": "Diagnostic Instruments",
+            "price": 1190,
+            "currency": "LKR",
+            "description": "Lightweight reflex percussion hammer designed for neurological examination and deep tendon reflex testing in paediatric patients.",
+            "variants": ["White"],
+            "images": ["/images/paediatric-knee-hammer.jpeg"],
+            "offerPercentage": 0
+        },
+        {
+            "id": 4,
+            "name": "Littmann Spare Parts Kit",
+            "category": "Stethoscope Accessories",
+            "price": 6490,
+            "currency": "LKR",
+            "description": "Genuine Littmann spare parts kit for Classic III and Cardiology IV stethoscopes including soft-sealing eartips, tunable diaphragms, and non-chill bell sleeve.",
+            "variants": ["Black"],
+            "images": ["/images/littmann-spare-parts-kit.jpeg"],
+            "offerPercentage": 0
+        },
+        {
+            "id": 5,
+            "name": "Cardiology Stethoscope Case",
+            "category": "Medical Accessories",
+            "price": 4190,
+            "currency": "LKR",
+            "description": "Premium protective hard case designed for cardiology stethoscopes with durable zip closure and portable carrying handle.",
+            "variants": ["Black"],
+            "images": ["/images/cardiology-stethoscope-case.jpeg"],
+            "offerPercentage": 0
+        },
+        {
+            "id": 6,
+            "name": "Paediatric Kit",
+            "category": "Paediatric Accessories",
+            "price": 1850,
+            "currency": "LKR",
+            "description": "Complete paediatric activity and examination support kit including colouring books, crayons, toys, wooden utensils, stationery items, and transparent carry bag for child-friendly clinical interactions.",
+            "variants": ["Customised Bag"],
+            "images": ["/images/paediatric-kit.jpeg"],
+            "offerPercentage": 0
+        },
+        {
+            "id": 7,
+            "name": "Sensory Kit",
+            "category": "Clinical Examination Kits",
+            "price": 900,
+            "currency": "LKR",
+            "description": "Portable sensory examination kit containing visual acuity charts, colour vision cards, cotton wool, neurotips, tuning tools, measuring tape, and sensory testing accessories for neurological assessment.",
+            "variants": ["Customised Bag"],
+            "images": ["/images/sensory-kit.jpeg"],
+            "offerPercentage": 0
+        },
+        {
+            "id": 8,
+            "name": "Littmann Quality A Kit",
+            "category": "Stethoscope Accessories",
+            "price": 3590,
+            "currency": "LKR",
+            "description": "Quality replacement kit for Littmann stethoscopes including diaphragms, rim, and soft-sealing eartips for optimal acoustic performance and maintenance.",
+            "variants": ["Black", "Gray"],
+            "images": ["/images/littmann-quality-a-kit.jpeg"],
+            "offerPercentage": 0
+        },
+        {
+            "id": 9,
+            "name": "Littmann Quality A Adult Diaphragm",
+            "category": "Stethoscope Accessories",
+            "price": 1890,
+            "currency": "LKR",
+            "description": "Quality replacement adult diaphragm for Littmann stethoscopes designed to maintain clear acoustic performance and accurate auscultation.",
+            "variants": ["Black", "Gray"],
+            "images": ["/images/littmann-quality-a-adult-diaphragm.jpeg"],
+            "offerPercentage": 0
+        },
+        {
+            "id": 10,
+            "name": "Littmann Quality A Ear Tips",
+            "category": "Stethoscope Accessories",
+            "price": 990,
+            "currency": "LKR",
+            "description": "Soft-sealing replacement ear tips for Littmann stethoscopes designed for comfortable fit, noise isolation, and improved acoustic performance.",
+            "variants": ["Black"],
+            "images": ["/images/littmann-quality-a-ear-tips.jpeg"],
+            "offerPercentage": 0
+        },
+        {
+            "id": 11,
+            "name": "Littmann Quality A Paediatric Diaphragm",
+            "category": "Stethoscope Accessories",
+            "price": 990,
+            "currency": "LKR",
+            "description": "Quality replacement paediatric diaphragm for Littmann stethoscopes designed to provide clear acoustic performance during paediatric auscultation.",
+            "variants": ["Black", "Gray"],
+            "images": ["/images/littmann-quality-a-paediatric-diaphragm.jpeg"],
+            "offerPercentage": 0
+        },
+        {
+            "id": 12,
+            "name": "Littmann Quality A Chill Bell Sleeve",
+            "category": "Stethoscope Accessories",
+            "price": 1190,
+            "currency": "LKR",
+            "description": "Replacement non-chill bell sleeve for Littmann stethoscopes designed to improve patient comfort during auscultation.",
+            "variants": ["Black", "Gray"],
+            "images": ["/images/littmann-quality-a-chill-bell-sleeve.jpeg"],
+            "offerPercentage": 0
+        }
+    ]
+}

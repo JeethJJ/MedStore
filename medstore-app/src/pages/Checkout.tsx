@@ -6,6 +6,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faArrowLeft, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { useCart } from '../context/CartContext';
 import type { CustomerDetails } from '../types';
+import { logoSrc } from '../constants/assets';
 
 const WHATSAPP_NUMBER = '94741016229';
 
@@ -243,7 +244,9 @@ const Checkout: React.FC = () => {
                       {item.product.images[0] ? (
                         <img src={item.product.images[0]} alt="" style={{ width: 44, height: 44, borderRadius: 8, objectFit: 'cover', flexShrink: 0, border: '1px solid rgba(255,255,255,0.2)' }} />
                       ) : (
-                        <div style={{ width: 44, height: 44, borderRadius: 8, background: 'rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem', flexShrink: 0 }}>🏥</div>
+                        <div style={{ width: 44, height: 44, borderRadius: 8, background: 'rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                          <img src={logoSrc} alt="" className="checkout-item-logo-placeholder" />
+                        </div>
                       )}
                       <div style={{ flex: 1, minWidth: 0 }}>
                         <div style={{ fontSize: '0.8rem', fontWeight: 600, lineHeight: 1.2, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{item.product.name}</div>

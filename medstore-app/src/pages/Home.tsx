@@ -8,6 +8,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { products } from '../data/products';
 import ProductCard from '../components/ProductCard';
+import { logoSrc } from '../constants/assets';
 
 const features = [
   {
@@ -75,14 +76,8 @@ const Home: React.FC = () => {
               </div>
             </Col>
             <Col lg={6} className="d-none d-lg-flex justify-content-center align-items-center">
-              <div style={{
-                width: 380, height: 380, borderRadius: '50%',
-                background: 'rgba(255,255,255,0.06)',
-                border: '2px solid rgba(255,255,255,0.12)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontSize: '10rem',
-              }}>
-                🏥
+              <div className="hero-logo-frame">
+                <img src={logoSrc} alt="MedStore" className="hero-logo-image" />
               </div>
             </Col>
           </Row>

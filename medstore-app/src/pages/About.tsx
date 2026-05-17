@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeartbeat, faAward, faUsers, faLeaf } from '@fortawesome/free-solid-svg-icons';
+import { logoSrc } from '../constants/assets';
 
 const values = [
   { icon: faHeartbeat, title: 'Patient First', desc: 'Every product we stock is chosen with patient safety and comfort as the top priority.' },
@@ -26,7 +27,7 @@ const About: React.FC = () => (
       <Row className="align-items-center g-5 mb-5">
         <Col lg={6}>
           <div style={{ background: 'linear-gradient(135deg, var(--secondary), var(--primary))', borderRadius: 20, padding: '40px', color: 'white', minHeight: 320, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <div style={{ fontSize: '3rem', marginBottom: 16 }}>🏥</div>
+            <img src={logoSrc} alt="MedStore" className="about-story-logo" />
             <h2 style={{ fontWeight: 800, fontSize: '2rem', marginBottom: 12 }}>Our Story</h2>
             <p style={{ opacity: 0.85, lineHeight: 1.8 }}>
               Founded with a clear mission — to make quality healthcare accessible to every Sri Lankan family.

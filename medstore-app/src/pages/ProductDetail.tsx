@@ -10,6 +10,7 @@ import { products } from '../data/products';
 import { useCart } from '../context/CartContext';
 import type { ProductVariant } from '../types';
 import ProductCard from '../components/ProductCard';
+import { logoSrc } from '../constants/assets';
 
 const ProductDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -87,7 +88,7 @@ const ProductDetail: React.FC = () => {
                   />
                 ) : (
                   <div style={{ width: '100%', height: 380, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '6rem', color: 'var(--primary)' }}>
-                    🏥
+                    <img src={logoSrc} alt="MedStore" className="product-detail-logo-placeholder" />
                   </div>
                 )}
                 {product.images.length > 1 && (

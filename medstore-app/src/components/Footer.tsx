@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCross, faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { logoSrc } from '../constants/assets';
 
 const Footer: React.FC = () => (
   <footer className="site-footer">
@@ -12,17 +13,7 @@ const Footer: React.FC = () => (
         {/* Brand */}
         <Col md={4}>
           <div className="d-flex align-items-center gap-2 mb-3">
-            <div
-              style={{
-                width: 36, height: 36, borderRadius: 8,
-                background: 'rgba(144,224,239,0.15)',
-                border: '1.5px solid rgba(144,224,239,0.4)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                color: '#90e0ef', fontSize: 16,
-              }}
-            >
-              <FontAwesomeIcon icon={faCross} />
-            </div>
+            <img src={logoSrc} alt="MedStore" className="footer-logo-image" />
             <span style={{ fontWeight: 700, fontSize: '1.2rem', color: 'white' }}>
               Med<span style={{ color: '#90e0ef' }}>Store</span>
             </span>

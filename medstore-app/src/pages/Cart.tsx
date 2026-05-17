@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash, faArrowLeft, faArrowRight, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { useCart } from '../context/CartContext';
+import { logoSrc } from '../constants/assets';
 
 const Cart: React.FC = () => {
   const { state, removeItem, updateQuantity, totalItems, totalPrice } = useCart();
@@ -64,7 +65,7 @@ const Cart: React.FC = () => {
                   <img src={item.product.images[0]} alt={item.product.name} className="cart-item-img" />
                 ) : (
                   <div style={{ width: 80, height: 80, borderRadius: 8, background: 'var(--background)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', flexShrink: 0 }}>
-                    🏥
+                    <img src={logoSrc} alt="" className="cart-item-logo-placeholder" />
                   </div>
                 )}
 

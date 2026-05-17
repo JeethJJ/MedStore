@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart, faCross, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faBars } from '@fortawesome/free-solid-svg-icons';
 import { useCart } from '../context/CartContext';
+import { logoSrc } from '../constants/assets';
 
 const AppNavbar: React.FC = () => {
   const { totalItems } = useCart();
@@ -26,9 +27,7 @@ const AppNavbar: React.FC = () => {
     >
       <Container>
         <Navbar.Brand as={Link} to="/" className="navbar-brand-logo" onClick={() => setExpanded(false)}>
-          <div className="logo-icon">
-            <FontAwesomeIcon icon={faCross} style={{ color: '#90e0ef' }} />
-          </div>
+          <img src={logoSrc} alt="MedStore" className="logo-image" />
           <div className="logo-text">
             Med<span>Store</span>
           </div>

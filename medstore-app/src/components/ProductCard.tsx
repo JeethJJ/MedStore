@@ -18,7 +18,7 @@ const categoryIcons: Record<string, string> = {
   'First Aid': '🩹',
   Therapy: '🌡️',
   Orthopaedics: '🦴',
-  Furniture: '🏥',
+  Furniture: '🛏️',
 };
 
 const ProductCard: React.FC<Props> = ({ product, view = 'grid' }) => {
@@ -43,7 +43,7 @@ const ProductCard: React.FC<Props> = ({ product, view = 'grid' }) => {
           <img src={product.images[0]} alt={product.name} className="product-list-img" loading="lazy" />
         ) : (
           <div className="product-list-img-placeholder">
-            {categoryIcons[product.category] || '🏥'}
+            {categoryIcons[product.category] || '🩺'}
           </div>
         )}
         <div style={{ flex: 1 }}>
@@ -95,7 +95,7 @@ const ProductCard: React.FC<Props> = ({ product, view = 'grid' }) => {
         <img src={product.images[0]} alt={product.name} className="product-card-img" loading="lazy" />
       ) : (
         <div className="product-card-img-placeholder">
-          {categoryIcons[product.category] || '🏥'}
+          {categoryIcons[product.category] || '🩺'}
         </div>
       )}
       <div className="product-card-body">
