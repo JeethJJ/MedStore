@@ -62,7 +62,7 @@ const Cart: React.FC = () => {
               >
                 {/* Image */}
                 {item.product.images[0] ? (
-                  <img src={item.product.images[0]} alt={item.product.name} className="cart-item-img" />
+                  <img src={`${import.meta.env.BASE_URL.slice(0, -1)}${item.product.images[0]}`} alt={item.product.name} className="cart-item-img" />
                 ) : (
                   <div style={{ width: 80, height: 80, borderRadius: 8, background: 'var(--background)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', flexShrink: 0 }}>
                     <img src={logoSrc} alt="" className="cart-item-logo-placeholder" />

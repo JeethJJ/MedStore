@@ -242,7 +242,7 @@ const Checkout: React.FC = () => {
                       style={{ display: 'flex', gap: 10, marginBottom: 12, alignItems: 'center' }}
                     >
                       {item.product.images[0] ? (
-                        <img src={item.product.images[0]} alt="" style={{ width: 44, height: 44, borderRadius: 8, objectFit: 'cover', flexShrink: 0, border: '1px solid rgba(255,255,255,0.2)' }} />
+                        <img src={`${import.meta.env.BASE_URL.slice(0, -1)}${item.product.images[0]}`} alt="" style={{ width: 44, height: 44, borderRadius: 8, objectFit: 'cover', flexShrink: 0, border: '1px solid rgba(255,255,255,0.2)' }} />
                       ) : (
                         <div style={{ width: 44, height: 44, borderRadius: 8, background: 'rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                           <img src={logoSrc} alt="" className="checkout-item-logo-placeholder" />

@@ -11,14 +11,11 @@ interface Props {
 }
 
 const categoryIcons: Record<string, string> = {
-  Monitoring: '🩺',
-  Diagnostics: '🔬',
-  Mobility: '♿',
-  Respiratory: '💨',
-  'First Aid': '🩹',
-  Therapy: '🌡️',
-  Orthopaedics: '🦴',
-  Furniture: '🛏️',
+  'Medical Accessories': '🎒',
+  'Diagnostic Instruments': '🔨',
+  'Stethoscope Accessories': '🩺',
+  'Paediatric Accessories': '👶',
+  'Clinical Examination Kits': '🔬',
 };
 
 const ProductCard: React.FC<Props> = ({ product, view = 'grid' }) => {
@@ -40,7 +37,7 @@ const ProductCard: React.FC<Props> = ({ product, view = 'grid' }) => {
     return (
       <div className="product-list-item" onClick={goToDetail} role="button" tabIndex={0} onKeyDown={e => e.key === 'Enter' && goToDetail()}>
         {product.images[0] ? (
-          <img src={product.images[0]} alt={product.name} className="product-list-img" loading="lazy" />
+          <img src={`${import.meta.env.BASE_URL.slice(0, -1)}${product.images[0]}`} alt={product.name} className="product-list-img" loading="lazy" />
         ) : (
           <div className="product-list-img-placeholder">
             {categoryIcons[product.category] || '🩺'}
@@ -92,7 +89,7 @@ const ProductCard: React.FC<Props> = ({ product, view = 'grid' }) => {
   return (
     <div className="product-card" onClick={goToDetail} role="button" tabIndex={0} onKeyDown={e => e.key === 'Enter' && goToDetail()}>
       {product.images[0] ? (
-        <img src={product.images[0]} alt={product.name} className="product-card-img" loading="lazy" />
+        <img src={`${import.meta.env.BASE_URL.slice(0, -1)}${product.images[0]}`} alt={product.name} className="product-card-img" loading="lazy" />
       ) : (
         <div className="product-card-img-placeholder">
           {categoryIcons[product.category] || '🩺'}

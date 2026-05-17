@@ -82,7 +82,7 @@ const ProductDetail: React.FC = () => {
               <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', border: '1px solid var(--border)', marginBottom: 12, background: '#e9f1fb' }}>
                 {product.images.length > 0 ? (
                   <img
-                    src={product.images[activeImage]}
+                    src={`${import.meta.env.BASE_URL.slice(0, -1)}${product.images[activeImage]}`}
                     alt={product.name}
                     style={{ width: '100%', height: 380, objectFit: 'cover', display: 'block' }}
                   />
@@ -110,7 +110,7 @@ const ProductDetail: React.FC = () => {
                   {product.images.map((img, i) => (
                     <img
                       key={i}
-                      src={img}
+                      src={`${import.meta.env.BASE_URL.slice(0, -1)}${img}`}
                       alt=""
                       onClick={() => setActiveImage(i)}
                       style={{
