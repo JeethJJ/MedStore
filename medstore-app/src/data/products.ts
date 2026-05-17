@@ -74,7 +74,7 @@ export const products: Product[] = [
     description: 'Premium protective hard case designed for cardiology stethoscopes with durable zip closure and portable carrying handle.',
     longDescription: 'Premium protective hard case designed for cardiology stethoscopes with durable zip closure and portable carrying handle.',
     category: 'Medical Accessories',
-    images: ['/images/cardiology-stethoscope-case.jpeg'],
+    images: ['/images/cardiology-stethoscope-case.jpeg', '/images/cardiology-stethoscope-case-2.jpeg'],
     variants: [
       { color: 'Black', label: 'Black' },
     ],

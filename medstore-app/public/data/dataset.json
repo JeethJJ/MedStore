@@ -85,7 +85,8 @@
                 "Black"
             ],
             "images": [
-                "/images/cardiology-stethoscope-case.jpeg"
+                "/images/cardiology-stethoscope-case.jpeg",
+                "/images/cardiology-stethoscope-case-2.jpeg"
             ],
             "offerPercentage": 0,
             "inStock": true
