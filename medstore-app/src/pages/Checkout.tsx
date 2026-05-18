@@ -9,6 +9,12 @@ import type { CustomerDetails } from '../types';
 import { logoSrc } from '../constants/assets';
 
 const WHATSAPP_NUMBER = '94786574512';
+const SRI_LANKA_PHONE_PREFIX = '+94';
+
+const getSriLankanWhatsAppNumber = (localNumber: string) => {
+  const digits = localNumber.replace(/\D/g, '').replace(/^0+/, '');
+  return `${SRI_LANKA_PHONE_PREFIX}${digits}`;
+};
 
 function buildWhatsAppMessage(customer: CustomerDetails, items: ReturnType<typeof useCart>['state']['items'], total: number): string {
   const itemLines = items
@@ -23,7 +29,7 @@ function buildWhatsAppMessage(customer: CustomerDetails, items: ReturnType<typeo
     '',
     '👤 *Customer Details*',
     `Name: ${customer.name}`,
-    `WhatsApp: ${customer.whatsapp}`,
+    `WhatsApp: ${getSriLankanWhatsAppNumber(customer.whatsapp)}`,
     `Delivery Address: ${customer.address}`,
     customer.notes ? `Notes: ${customer.notes}` : null,
     '',
@@ -69,10 +75,11 @@ const Checkout: React.FC = () => {
   const validate = (): boolean => {
     const errs: Partial<CustomerDetails> = {};
     if (!form.name.trim()) errs.name = 'Name is required';
-    if (!form.whatsapp.trim()) {
+    const whatsappDigits = form.whatsapp.replace(/\D/g, '');
+    if (!whatsappDigits) {
       errs.whatsapp = 'WhatsApp number is required';
-    } else if (!/^\+?[\d\s-]{7,15}$/.test(form.whatsapp.trim())) {
-      errs.whatsapp = 'Enter a valid phone number';
+    } else if (!/^\d{9}$/.test(whatsappDigits)) {
+      errs.whatsapp = 'Enter the 9 digits after +94';
     }
     if (!form.address.trim()) errs.address = 'Delivery address is required';
     setErrors(errs);
@@ -81,7 +88,8 @@ const Checkout: React.FC = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setForm(prev => ({ ...prev, [name]: value }));
+    const nextValue = name === 'whatsapp' ? value.replace(/\D/g, '').slice(0, 9) : value;
+    setForm(prev => ({ ...prev, [name]: nextValue }));
     if (errors[name as keyof CustomerDetails]) {
       setErrors(prev => ({ ...prev, [name]: undefined }));
     }
@@ -171,7 +179,7 @@ const Checkout: React.FC = () => {
                     name="name"
                     value={form.name}
                     onChange={handleChange}
-                    placeholder="e.g. Ahmed Jihan"
+                    placeholder="e.g. John Doe"
                     isInvalid={!!errors.name}
                     style={{ borderRadius: 10, padding: '10px 14px', border: '1.5px solid var(--border)' }}
                   />
@@ -180,16 +188,30 @@ const Checkout: React.FC = () => {
 
                 <Form.Group className="mb-4">
                   <Form.Label style={{ fontWeight: 600 }}>WhatsApp Number *</Form.Label>
-                  <Form.Control
-                    type="tel"
-                    name="whatsapp"
-                    value={form.whatsapp}
-                    onChange={handleChange}
-                    placeholder="e.g. +94 77 123 4567"
-                    isInvalid={!!errors.whatsapp}
-                    style={{ borderRadius: 10, padding: '10px 14px', border: '1.5px solid var(--border)' }}
-                  />
-                  <Form.Control.Feedback type="invalid">{errors.whatsapp}</Form.Control.Feedback>
+                  <div style={{ display: 'flex' }}>
+                    <span
+                      style={{
+                        display: 'inline-flex', alignItems: 'center', padding: '10px 14px',
+                        border: '1.5px solid var(--border)', borderRight: 0,
+                        borderRadius: '10px 0 0 10px', background: 'var(--background)',
+                        color: 'var(--text-main)', fontWeight: 700,
+                      }}
+                    >
+                      +94
+                    </span>
+                    <Form.Control
+                      type="tel"
+                      inputMode="numeric"
+                      name="whatsapp"
+                      value={form.whatsapp}
+                      onChange={handleChange}
+                      placeholder="771234567"
+                      maxLength={9}
+                      isInvalid={!!errors.whatsapp}
+                      style={{ borderRadius: '0 10px 10px 0', padding: '10px 14px', border: '1.5px solid var(--border)' }}
+                    />
+                  </div>
+                  <Form.Control.Feedback type="invalid" style={{ display: errors.whatsapp ? 'block' : undefined }}>{errors.whatsapp}</Form.Control.Feedback>
                 </Form.Group>
 
                 <Form.Group className="mb-4">
