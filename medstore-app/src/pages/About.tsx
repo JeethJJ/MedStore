@@ -15,7 +15,7 @@ const About: React.FC = () => (
   <>
     <div className="page-hero">
       <Container>
-        <h1>About MedStore</h1>
+        <h1>About Med Store Medicals</h1>
         <p style={{ opacity: 0.85, marginTop: 8, fontSize: '1.05rem', maxWidth: 500, margin: '8px auto 0' }}>
           Your trusted partner for quality medical equipment in Sri Lanka
         </p>
@@ -27,11 +27,11 @@ const About: React.FC = () => (
       <Row className="align-items-center g-5 mb-5">
         <Col lg={6}>
           <div style={{ background: 'linear-gradient(135deg, var(--secondary), var(--primary))', borderRadius: 20, padding: '40px', color: 'white', minHeight: 320, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <img src={logoSrc} alt="MedStore" className="about-story-logo" />
+            <img src={logoSrc} alt="Med Store Medicals" className="about-story-logo" />
             <h2 style={{ fontWeight: 800, fontSize: '2rem', marginBottom: 12 }}>Our Story</h2>
             <p style={{ opacity: 0.85, lineHeight: 1.8 }}>
               Founded with a clear mission — to make quality healthcare accessible to every Sri Lankan family.
-              MedStore was born from a personal experience of struggling to find reliable medical equipment.
+              Med Store Medicals was born from a personal experience of struggling to find reliable medical equipment.
             </p>
           </div>
         </Col>
@@ -40,7 +40,7 @@ const About: React.FC = () => (
             Dedicated to <span style={{ color: 'var(--primary)' }}>Better Health</span>
           </h2>
           <p style={{ color: 'var(--text-muted)', lineHeight: 1.9, marginBottom: 16 }}>
-            MedStore was established to address the growing need for accessible, high-quality medical equipment
+            Med Store Medicals was established to address the growing need for accessible, high-quality medical equipment
             in Sri Lanka. We understand that healthcare is not a luxury — it's a necessity, and every family
             deserves access to the tools that keep them healthy and safe.
           </p>

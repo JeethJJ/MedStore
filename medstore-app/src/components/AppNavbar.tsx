@@ -27,9 +27,9 @@ const AppNavbar: React.FC = () => {
     >
       <Container>
         <Navbar.Brand as={Link} to="/" className="navbar-brand-logo" onClick={() => setExpanded(false)}>
-          <img src={logoSrc} alt="MedStore" className="logo-image" />
+          <img src={logoSrc} alt="Med Store Medicals" className="logo-image" />
           <div className="logo-text">
-            Med<span>Store</span>
+            Med Store <span>Medicals</span>
           </div>
         </Navbar.Brand>
 

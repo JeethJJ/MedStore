@@ -77,7 +77,7 @@ const Home: React.FC = () => {
             </Col>
             <Col lg={6} className="d-none d-lg-flex justify-content-center align-items-center">
               <div className="hero-logo-frame">
-                <img src={logoSrc} alt="MedStore" className="hero-logo-image" />
+                <img src={logoSrc} alt="Med Store Medicals" className="hero-logo-image" />
               </div>
             </Col>
           </Row>
@@ -89,7 +89,7 @@ const Home: React.FC = () => {
         <Container>
           <div className="section-header" style={{ justifyContent: 'center', flexDirection: 'column', alignItems: 'center', textAlign: 'center', marginBottom: 40 }}>
             <h2 style={{ fontWeight: 800, fontSize: 'clamp(1.4rem, 3vw, 2rem)', color: 'var(--text-main)' }}>
-              Why Choose <span style={{ color: 'var(--primary)' }}>MedStore</span>?
+              Why Choose <span style={{ color: 'var(--primary)' }}>Med Store Medicals</span>?
             </h2>
             <p style={{ color: 'var(--text-muted)', maxWidth: 480, marginTop: 8 }}>
               We are dedicated to providing the highest quality medical equipment with exceptional service.
@@ -148,7 +148,7 @@ const Home: React.FC = () => {
           <p style={{ opacity: 0.85, maxWidth: 480, margin: '0 auto 28px', fontSize: '1.05rem' }}>
             Our medical experts are available on WhatsApp to guide you to the best product for your needs.
           </p>
-          <a href="https://wa.me/94741016229" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/94786574512" target="_blank" rel="noopener noreferrer">
             <button className="btn-primary-custom" style={{
               padding: '14px 32px', fontSize: '1rem', borderRadius: 12,
               background: '#25D366', border: 'none',

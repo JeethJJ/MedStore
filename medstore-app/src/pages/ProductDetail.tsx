@@ -88,11 +88,11 @@ const ProductDetail: React.FC = () => {
                   <img
                     src={`${import.meta.env.BASE_URL.slice(0, -1)}${product.images[activeImage]}`}
                     alt={product.name}
-                    style={{ width: '100%', height: 380, objectFit: 'cover', display: 'block' }}
+                    style={{ width: '100%', height: 380, objectFit: 'contain', objectPosition: 'center', display: 'block', padding: 12, background: '#e9f1fb' }}
                   />
                 ) : (
                   <div style={{ width: '100%', height: 380, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '6rem', color: 'var(--primary)' }}>
-                    <img src={logoSrc} alt="MedStore" className="product-detail-logo-placeholder" />
+                    <img src={logoSrc} alt="Med Store Medicals" className="product-detail-logo-placeholder" />
                   </div>
                 )}
                 {product.images.length > 1 && (
@@ -118,7 +118,8 @@ const ProductDetail: React.FC = () => {
                       alt=""
                       onClick={() => setActiveImage(i)}
                       style={{
-                        width: 72, height: 56, objectFit: 'cover', borderRadius: 8, cursor: 'pointer',
+                        width: 72, height: 56, objectFit: 'contain', objectPosition: 'center', borderRadius: 8, cursor: 'pointer',
+                        background: '#e9f1fb', padding: 4,
                         border: `2px solid ${activeImage === i ? 'var(--primary)' : 'var(--border)'}`,
                         transition: 'border-color 0.15s',
                       }}

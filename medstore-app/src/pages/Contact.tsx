@@ -10,8 +10,8 @@ const contactItems = [
     iconColor: '#25D366',
     title: 'WhatsApp',
     subtitle: 'Chat with us directly',
-    value: '+94 741 016 229',
-    link: 'https://wa.me/94741016229',
+    value: '+94 786 574 512',
+    link: 'https://wa.me/94786574512',
     linkLabel: 'Open WhatsApp Chat',
     isExternal: true,
   },
@@ -20,8 +20,8 @@ const contactItems = [
     iconColor: 'var(--primary)',
     title: 'Phone',
     subtitle: 'Call us anytime',
-    value: '+94 741 016 229',
-    link: 'tel:+94741016229',
+    value: '+94 786 574 512',
+    link: 'tel:+94786574512',
     linkLabel: 'Call Now',
     isExternal: false,
   },
@@ -30,8 +30,8 @@ const contactItems = [
     iconColor: 'var(--accent)',
     title: 'Email',
     subtitle: 'Send us an email',
-    value: 'jihanjeed49@gmail.com',
-    link: 'mailto:jihanjeed49@gmail.com',
+    value: 'medstore4096@gmail.com',
+    link: 'mailto:medstore4096@gmail.com',
     linkLabel: 'Send Email',
     isExternal: false,
   },
@@ -118,7 +118,7 @@ const Contact: React.FC = () => (
           We typically respond within minutes.
         </p>
         <a
-          href="https://wa.me/94741016229"
+          href="https://wa.me/94786574512"
           target="_blank"
           rel="noopener noreferrer"
           style={{

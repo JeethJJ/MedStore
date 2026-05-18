@@ -8,7 +8,7 @@ import { useCart } from '../context/CartContext';
 import type { CustomerDetails } from '../types';
 import { logoSrc } from '../constants/assets';
 
-const WHATSAPP_NUMBER = '94741016229';
+const WHATSAPP_NUMBER = '94786574512';
 
 function buildWhatsAppMessage(customer: CustomerDetails, items: ReturnType<typeof useCart>['state']['items'], total: number): string {
   const itemLines = items
@@ -19,7 +19,7 @@ function buildWhatsAppMessage(customer: CustomerDetails, items: ReturnType<typeo
     .join('\n');
 
   const message = [
-    '🛒 *New Order from MedStore*',
+    '🛒 *New Order from Med Store Medicals*',
     '',
     '👤 *Customer Details*',
     `Name: ${customer.name}`,
@@ -242,7 +242,7 @@ const Checkout: React.FC = () => {
                       style={{ display: 'flex', gap: 10, marginBottom: 12, alignItems: 'center' }}
                     >
                       {item.product.images[0] ? (
-                        <img src={`${import.meta.env.BASE_URL.slice(0, -1)}${item.product.images[0]}`} alt="" style={{ width: 44, height: 44, borderRadius: 8, objectFit: 'cover', flexShrink: 0, border: '1px solid rgba(255,255,255,0.2)' }} />
+                        <img src={`${import.meta.env.BASE_URL.slice(0, -1)}${item.product.images[0]}`} alt="" style={{ width: 44, height: 44, borderRadius: 8, objectFit: 'contain', objectPosition: 'center', background: 'rgba(255,255,255,0.12)', padding: 3, flexShrink: 0, border: '1px solid rgba(255,255,255,0.2)' }} />
                       ) : (
                         <div style={{ width: 44, height: 44, borderRadius: 8, background: 'rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                           <img src={logoSrc} alt="" className="checkout-item-logo-placeholder" />
